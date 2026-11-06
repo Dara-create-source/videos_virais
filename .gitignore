@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# mídia fica no Google Drive
+*.mp4
+*.mov
+*.wav
+gerador-de-videos/*/audio/
+gerador-de-videos/*/imagens/
+gerador-de-videos/vozes/
+gerador-de-videos/amostras-voz/
+
+# configuração local e segredos
+n8n/canal-terror/config.json
+n8n/canal-terror/workflows_publicados.json
+n8n/canal-terror/prompt_tarefa_agendada.md
+n8n/canal-terror/wf_*.json
+.env

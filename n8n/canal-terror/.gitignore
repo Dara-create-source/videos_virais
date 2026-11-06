@@ -1,0 +1,5 @@
+config.json
+workflows_publicados.json
+prompt_tarefa_agendada.md
+wf_*.json
+__pycache__/

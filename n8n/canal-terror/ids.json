@@ -1,0 +1,29 @@
+{
+  "pasta_drive_id": "1IavZVQovf6jgqGadkoAEgKTaCXpmJ0eO",
+  "planilha_id": "1WSTCwv12hYZ85B3MzUM13OYQ6nyGsLe06jg7DkXXT1Q",
+  "credenciais": {
+    "googleDriveOAuth2Api": {
+      "id": "3EDcGgnYNakro3y2",
+      "name": "Google Drive account"
+    },
+    "googleDocsOAuth2Api": {
+      "id": "wG1YpVAp6YrdsEfc",
+      "name": "Google Docs account"
+    },
+    "googleSheetsOAuth2Api": {
+      "id": "gStKl60dRKv43Ibn",
+      "name": "Google Sheets account"
+    },
+    "evolutionApi": {
+      "id": "pu3uTQhwymmsnKz9",
+      "name": "DARA"
+    },
+    "openAiApi": {
+      "id": "nziOB1K5D8s1cJNE",
+      "name": "OpenAi account"
+    }
+  },
+  "pasta_videos_id": "1rc2kIbcq8GA-Kap32yOANez__Im99MJb",
+  "pasta_audios_id": "1bRkA2Mvx3O2-rCNi_mTHo39UuHdwCd6Y",
+  "pasta_imagens_id": "15JHtHvPRylSTGbmpZh0OGp6Unf05hYb5"
+}

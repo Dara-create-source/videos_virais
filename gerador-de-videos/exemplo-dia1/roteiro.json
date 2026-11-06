@@ -1,0 +1,188 @@
+{
+  "titulo": "APAGÃO — Dia 1: A cidade apagou às 3h17",
+  "config": {
+    "formato": "9:16",
+    "modelo_voz": "../vozes/pt_BR-faber-medium.onnx",
+    "velocidade_voz": 1.15,
+    "pausa": 0.9,
+    "palavras_legenda": 3,
+    "contador": {
+      "valor": "DIA 1"
+    },
+    "pasta_audio": "audio",
+    "brilho_fundo": 1.7,
+    "chamada": "serie",
+    "chamada_personagem": "imagens/lucas_lanterna.png"
+  },
+  "cenas": [
+    {
+      "narracao": "Dia 1. Às 3h17 da manhã, a cidade inteira apagou. E alguma coisa veio junto com o escuro.",
+      "fundo": "imagens/cidade_acesa.png",
+      "fundo_depois": "imagens/cidade_apagada.png",
+      "troca_em": 4.3,
+      "efeito": "zoom_lento",
+      "sons": [
+        "impacto",
+        {
+          "som": "impacto",
+          "em": 4.3
+        }
+      ],
+      "brilho": 1.0,
+      "brilho_depois": 1.8
+    },
+    {
+      "narracao": "Eu tava no turno da madrugada no posto. A luz caiu, as bombas apagaram, e lá longe os prédios foram sumindo um por um, como se alguém tivesse desligando bairro por bairro.",
+      "fundo": "imagens/rua_noite.png",
+      "personagem": "imagens/lucas_andando.png",
+      "posicao": "esquerda",
+      "tamanho": 0.36,
+      "chao": 0.88,
+      "efeito": "zoom_lento",
+      "personagem_efeito": "entrar"
+    },
+    {
+      "narracao": "Peguei o celular: sem sinal. O rádio: só chiado. E um silêncio que eu nunca tinha ouvido na cidade.",
+      "fundo": "imagens/loja_escura.png",
+      "personagem": "imagens/lucas_celular.png",
+      "tamanho": 0.48,
+      "sons": [
+        {
+          "som": "chiado",
+          "em": 2.2,
+          "volume": 0.8
+        }
+      ],
+      "chao": 0.86
+    },
+    {
+      "narracao": "Aí eu ouvi. Passos no asfalto. Devagar. Vindo da escuridão da estrada. [pausa]",
+      "fundo": "imagens/estrada_escura.png",
+      "efeito": "zoom_lento",
+      "sons": [
+        {
+          "som": "batida",
+          "em": 1.5
+        },
+        {
+          "som": "batida",
+          "em": 3.2
+        },
+        {
+          "som": "batida",
+          "em": 4.9
+        }
+      ]
+    },
+    {
+      "narracao": "Gritei: Quem tá aí? Os passos pararam. [pausa] E recomeçaram. Mais rápido.",
+      "fundo": "imagens/estrada_escura.png",
+      "personagem": "imagens/lucas_andando.png",
+      "posicao": "direita",
+      "tamanho": 0.4,
+      "chao": 0.97,
+      "personagem_efeito": "tremer",
+      "efeito": "tremor",
+      "sons": [
+        {
+          "som": "impacto",
+          "em": 7.2,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "narracao": "Corri pra loja, tateando as prateleiras, derrubando tudo, até achar embaixo do balcão a lanterna recarregável que o Seu Valdir deixava pra emergência.",
+      "fundo": "imagens/loja_escura.png",
+      "personagem": "imagens/lucas_andando.png",
+      "personagem_depois": "imagens/lucas_lanterna.png",
+      "troca_personagem_em": 6.6,
+      "efeito": "piscar",
+      "sons": [
+        {
+          "som": "estalo",
+          "em": 6.6
+        }
+      ],
+      "tamanho": 0.44,
+      "chao": 0.92
+    },
+    {
+      "narracao": "Liguei e apontei pra porta de vidro. Tinha alguma coisa ali. Alta. Magra. Grudada no vidro. Quando a luz bateu, ela recuou, como se queimasse.",
+      "fundo": "imagens/porta_criatura.png",
+      "efeito": "zoom_rapido",
+      "sons": [
+        "impacto",
+        {
+          "som": "chiado",
+          "em": 12.0
+        }
+      ],
+      "brilho": 2.2,
+      "foco": [
+        0.5,
+        0.0
+      ]
+    },
+    {
+      "narracao": "Ela não foi embora. Só ficou na beirada da luz, esperando. E eu entendi a regra: no escuro, eles chegam perto. Na luz, eles esperam.",
+      "fundo": "imagens/porta_criatura.png",
+      "efeito": "zoom_lento",
+      "texto_tela": "NO ESCURO ELES CHEGAM PERTO",
+      "texto_tela_tamanho": 0.09,
+      "texto_tela_altura": 0.24,
+      "brilho": 2.2,
+      "foco": [
+        0.5,
+        0.0
+      ]
+    },
+    {
+      "narracao": "Passei a noite inteira sentado no chão, com a lanterna apontada pra porta, sem piscar.",
+      "fundo": "imagens/loja_escura.png",
+      "personagem": "imagens/lucas_sentado.png",
+      "tamanho": 0.4,
+      "chao": 0.93,
+      "personagem_efeito": "tremer"
+    },
+    {
+      "narracao": "Quando o céu começou a clarear, ela sumiu. E eu olhei pra bateria.",
+      "fundo": "imagens/amanhecer.png",
+      "efeito": "afastar",
+      "brilho": 1.25
+    },
+    {
+      "narracao": "Vinte por cento. [pausa] E a energia não voltou.",
+      "fundo": "imagens/bateria.png",
+      "efeito": "zoom_lento",
+      "texto_tela": "20%",
+      "texto_tela_cor": [
+        235,
+        60,
+        60
+      ],
+      "texto_tela_altura": 0.64,
+      "texto_piscando": true,
+      "sons": [
+        "bip",
+        {
+          "som": "bip",
+          "em": 0.6
+        }
+      ]
+    },
+    {
+      "narracao": "Hoje à noite, eu vou ter que descobrir quanto tempo vinte por cento dura.",
+      "fundo": "imagens/cidade_apagada.png",
+      "efeito": "zoom_lento",
+      "final_preto": true,
+      "pausa_depois": 1.0,
+      "sons": [
+        {
+          "som": "impacto",
+          "em": 3.5
+        }
+      ]
+    }
+  ]
+}

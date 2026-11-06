@@ -1,0 +1,295 @@
+{
+  "titulo": "Nunca atenda a bomba 4",
+  "config": {
+    "formato": "9:16",
+    "pasta_audio": "audio",
+    "palavras_legenda": 3,
+    "pausa": 0.9,
+    "modelo_voz": "../vozes/pt_BR-faber-medium.onnx",
+    "chamada": "avulso",
+    "chamada_personagem": "imagens/lucas_sorriso.png"
+  },
+  "cenas": [
+    {
+      "narracao": "Meu primeiro dia de frentista veio com uma regra: nunca atender a bomba 4.",
+      "fundo": "imagens/posto_bomba4.png",
+      "efeito": "zoom_rapido",
+      "sons": [
+        "impacto"
+      ],
+      "foco": [
+        0.68,
+        0.5
+      ],
+      "brilho": 1.4
+    },
+    {
+      "narracao": "Eu precisava do dinheiro. Ninguém durava mais de uma semana naquele posto de beira de estrada, e eu achei que era por causa do salário.",
+      "fundo": "imagens/posto_estrada.png",
+      "efeito": "zoom_lento",
+      "foco": [
+        0.58,
+        0.5
+      ],
+      "brilho": 1.5
+    },
+    {
+      "narracao": "No primeiro dia, Seu Valdir, o dono, me entregou a chave e falou sem me olhar: \"A bomba 4 tá desligada. Se parar carro nela, você não sai da loja. Nem olha.\"",
+      "fundo": "imagens/loja_escura.png",
+      "brilho": 1.7,
+      "efeito": "zoom_lento",
+      "personagem": "imagens/seu_valdir.png",
+      "posicao": "centro",
+      "tamanho": 0.44,
+      "chao": 0.88,
+      "sons": [
+        {
+          "som": "estalo",
+          "em": 3.0
+        },
+        {
+          "som": "estalo",
+          "em": 3.1
+        }
+      ]
+    },
+    {
+      "narracao": "Só que o visor dela tava aceso. Marcando 47 litros.",
+      "fundo": "imagens/visor.png",
+      "efeito": "zoom_rapido",
+      "texto_tela": "47",
+      "texto_tela_cor": [
+        110,
+        240,
+        140
+      ],
+      "texto_tela_tamanho": 0.16,
+      "texto_tela_altura": 0.43,
+      "sons": [
+        {
+          "som": "chiado",
+          "em": 1.5,
+          "volume": 0.4
+        }
+      ],
+      "altura_legenda": 0.78,
+      "brilho": 1.3
+    },
+    {
+      "narracao": "3h17 da manhã. Um carro prata parou na bomba 4. Farol alto. Ninguém desceu.",
+      "fundo": "imagens/posto_carro.png",
+      "efeito": "piscar",
+      "sons": [
+        {
+          "som": "impacto",
+          "em": 2.0,
+          "volume": 0.6
+        }
+      ],
+      "foco": [
+        0.62,
+        0.5
+      ],
+      "brilho": 1.4
+    },
+    {
+      "narracao": "Buzinou uma vez. [pausa] Duas. [pausa] Três.",
+      "fundo": "imagens/posto_carro.png",
+      "efeito": "nenhum",
+      "sons": [
+        {
+          "som": "buzina",
+          "em": 1.6,
+          "volume": 0.6
+        },
+        {
+          "som": "buzina",
+          "em": 3.3,
+          "volume": 0.8
+        },
+        {
+          "som": "buzina",
+          "em": 5.0,
+          "volume": 1.0
+        }
+      ],
+      "foco": [
+        0.62,
+        0.5
+      ],
+      "brilho": 1.4
+    },
+    {
+      "narracao": "Pensei: deve ser alguém perdido. Ou bêbado. Fiquei atrás do balcão, fingindo mexer no celular.",
+      "fundo": "imagens/loja_escura.png",
+      "brilho": 1.7,
+      "personagem": "imagens/lucas_celular.png",
+      "personagem_efeito": "tremer",
+      "tamanho": 0.48,
+      "chao": 0.88
+    },
+    {
+      "narracao": "Aí o telefone da loja tocou. Atendi. Uma voz calma disse: \"Completa, por favor… Lucas.\" Eu nunca falei meu nome pra ninguém ali.",
+      "fundo": "imagens/telefone.png",
+      "efeito": "zoom_lento",
+      "sons": [
+        {
+          "som": "telefone",
+          "em": 0.5
+        },
+        {
+          "som": "impacto",
+          "em": 9.0
+        }
+      ],
+      "brilho": 1.5
+    },
+    {
+      "narracao": "Olhei o monitor das câmeras. Na imagem da bomba 4, tinha alguém do lado do carro, segurando a mangueira.",
+      "fundo": "imagens/posto_carro.png",
+      "filtro": "cctv",
+      "efeito": "zoom_lento",
+      "personagem": "imagens/lucas_costas.png",
+      "posicao": "centro",
+      "tamanho": 0.17,
+      "chao": 0.68,
+      "sons": [
+        {
+          "som": "chiado",
+          "em": 0.2,
+          "volume": 0.5
+        }
+      ],
+      "foco": [
+        0.62,
+        0.5
+      ],
+      "brilho": 1.4
+    },
+    {
+      "narracao": "Esfreguei os olhos e olhei pela vitrine. Do lado de fora, só o carro. Ninguém na bomba. Mas no monitor… ele continuava lá.",
+      "fundo": "imagens/posto_carro.png",
+      "efeito": "nenhum",
+      "personagem_depois": "imagens/lucas_costas.png",
+      "troca_personagem_em": 7.5,
+      "posicao": "centro",
+      "tamanho": 0.17,
+      "chao": 0.68,
+      "foco": [
+        0.62,
+        0.5
+      ],
+      "brilho": 1.4,
+      "filtro": "cctv",
+      "filtro_em": 7.0
+    },
+    {
+      "narracao": "Era eu. Meu boné. Meu uniforme. [pausa] E ele virou devagar pra câmera.",
+      "fundo": "imagens/posto_carro.png",
+      "filtro": "cctv",
+      "glitch": true,
+      "efeito": "zoom_lento",
+      "personagem": "imagens/lucas_costas.png",
+      "personagem_depois": "imagens/lucas_sorriso.png",
+      "troca_personagem_em": 4.4,
+      "posicao": "centro",
+      "tamanho": 0.17,
+      "chao": 0.68,
+      "sons": [
+        {
+          "som": "chiado",
+          "em": 4.4
+        }
+      ],
+      "foco": [
+        0.62,
+        0.5
+      ],
+      "brilho": 1.4
+    },
+    {
+      "narracao": "O visor começou a girar. 47… 48.",
+      "fundo": "imagens/visor.png",
+      "efeito": "zoom_lento",
+      "texto_tela": "47",
+      "texto_tela_depois": "48",
+      "troca_texto_em": 4.3,
+      "texto_tela_cor": [
+        110,
+        240,
+        140
+      ],
+      "texto_tela_tamanho": 0.16,
+      "texto_tela_altura": 0.43,
+      "sons": [
+        {
+          "som": "bip",
+          "em": 3.4
+        },
+        {
+          "som": "bip",
+          "em": 4.3
+        }
+      ],
+      "altura_legenda": 0.78,
+      "brilho": 1.3
+    },
+    {
+      "narracao": "[pausa] O sino da porta tocou atrás de mim. Eu não me virei.",
+      "fundo": "imagens/loja_escura.png",
+      "brilho": 1.4,
+      "personagem": "imagens/lucas_costas.png",
+      "tamanho": 0.5,
+      "chao": 0.95,
+      "efeito": "zoom_lento",
+      "sons": [
+        {
+          "som": "sino",
+          "em": 1.4
+        }
+      ]
+    },
+    {
+      "narracao": "Seu Valdir chegou às seis. Olhou pro visor da bomba 4, depois pra mim. \"Noite tranquila?\" Eu sorri e disse que sim. Ele não sorriu de volta.",
+      "fundo": "imagens/amanhecer.png",
+      "brilho": 1.25,
+      "efeito": "afastar",
+      "personagem": "imagens/seu_valdir.png",
+      "posicao": "centro",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "personagem_depois": "imagens/lucas_sorriso.png",
+      "troca_personagem_em": 7.2
+    },
+    {
+      "narracao": "Porque não era eu que tava sorrindo. Agora o visor marca 48. E eu fico lá fora, na bomba 4, buzinando… esperando o próximo frentista abrir a porta.",
+      "fundo": "imagens/posto_carro.png",
+      "efeito": "zoom_lento",
+      "texto_tela": "48",
+      "texto_tela_cor": [
+        110,
+        240,
+        140
+      ],
+      "texto_tela_tamanho": 0.1,
+      "texto_tela_altura": 0.22,
+      "final_preto": true,
+      "pausa_depois": 1.2,
+      "sons": [
+        {
+          "som": "buzina_longe",
+          "em": 7.5
+        },
+        {
+          "som": "impacto",
+          "em": 10.5
+        }
+      ],
+      "foco": [
+        0.62,
+        0.5
+      ],
+      "brilho": 1.4
+    }
+  ]
+}

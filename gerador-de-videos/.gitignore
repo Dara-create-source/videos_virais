@@ -1,0 +1,9 @@
+*.mp4
+__pycache__/
+amostras-voz/
+apagao-dia2/imagens/
+audio/
+bomba-4/imagens/
+exemplo-dia1/imagens/
+janela-que-sobra/imagens/
+vozes/

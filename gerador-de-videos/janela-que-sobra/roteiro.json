@@ -1,0 +1,173 @@
+{
+  "titulo": "A janela que sobra",
+  "config": {
+    "formato": "9:16",
+    "pasta_audio": "audio",
+    "palavras_legenda": 3,
+    "pausa": 0.9,
+    "modelo_voz": "../vozes/pt_BR-faber-medium.onnx",
+    "brilho_fundo": 1.4,
+    "chamada": "avulso",
+    "chamada_personagem": "imagens/lucas_lanterna.png"
+  },
+  "cenas": [
+    {
+      "narracao": "A casa do meu vizinho tem quatro janelas na frente. Por dentro… só tem três.",
+      "fundo": "imagens/casa_fachada.png",
+      "efeito": "nenhum",
+      "sons": [
+        "impacto"
+      ],
+      "brilho": 1.7
+    },
+    {
+      "narracao": "O Seu Ernesto viajou e me deixou a chave pra eu dar comida pro gato dele. Primeira noite, tudo normal.",
+      "fundo": "imagens/casa_fachada.png",
+      "personagem": "imagens/lucas_andando.png",
+      "personagem_efeito": "entrar",
+      "tamanho": 0.34,
+      "chao": 0.92,
+      "efeito": "nenhum",
+      "brilho": 1.7
+    },
+    {
+      "narracao": "Segunda noite, da minha casa, eu reparei: a janela do canto, a quarta, tava com a luz acesa. E a casa tava trancada.",
+      "fundo": "imagens/casa_janela_acesa.png",
+      "efeito": "nenhum",
+      "brilho": 1.7
+    },
+    {
+      "narracao": "Entrei pra conferir. Sala, cozinha, quarto. Três janelas. Contei duas vezes.",
+      "fundo": "imagens/sala_tres_janelas.png",
+      "personagem": "imagens/lucas_lanterna.png",
+      "personagem_efeito": "tremer",
+      "tamanho": 0.42,
+      "chao": 0.92,
+      "brilho": 1.6
+    },
+    {
+      "narracao": "Saí e olhei de fora. Quatro. [pausa] E na quarta, a cortina tava se mexendo.",
+      "fundo": "imagens/casa_janela_acesa.png",
+      "efeito": "nenhum",
+      "sons": [
+        {
+          "som": "impacto",
+          "em": 6.0,
+          "volume": 0.7
+        }
+      ],
+      "brilho": 1.7
+    },
+    {
+      "narracao": "Voltei com a lanterna e fui batendo na parede onde a quarta janela devia estar. Toc. Toc. Toc… oco.",
+      "fundo": "imagens/parede_sala.png",
+      "efeito": "zoom_lento",
+      "sons": [
+        {
+          "som": "toc",
+          "em": 6.3
+        },
+        {
+          "som": "toc",
+          "em": 6.9
+        },
+        {
+          "som": "toc",
+          "em": 7.5
+        }
+      ],
+      "brilho": 1.3
+    },
+    {
+      "narracao": "Aí, do outro lado da parede, alguém bateu de volta. Três vezes.",
+      "fundo": "imagens/parede_sala.png",
+      "efeito": "tremor",
+      "sons": [
+        {
+          "som": "toc",
+          "em": 4.4,
+          "volume": 1.0
+        },
+        {
+          "som": "toc",
+          "em": 5.0
+        },
+        {
+          "som": "toc",
+          "em": 5.6
+        }
+      ],
+      "brilho": 1.3
+    },
+    {
+      "narracao": "Liguei pro Seu Ernesto. Ele atendeu rindo, perguntou se tava tudo bem. Falei da janela. Ele parou de rir.",
+      "fundo": "imagens/sala_tres_janelas.png",
+      "personagem": "imagens/lucas_celular.png",
+      "tamanho": 0.44,
+      "chao": 0.92,
+      "sons": [
+        {
+          "som": "telefone",
+          "em": 0.8,
+          "volume": 0.6
+        }
+      ],
+      "brilho": 1.6
+    },
+    {
+      "narracao": "'Que gato?', ele disse. 'Eu não tenho gato.' [pausa]",
+      "fundo": "imagens/sala_tres_janelas.png",
+      "brilho": 1.6,
+      "personagem": "imagens/lucas_lanterna.png",
+      "tamanho": 0.6,
+      "chao": 1.05,
+      "efeito": "zoom_rapido",
+      "sons": [
+        "impacto"
+      ]
+    },
+    {
+      "narracao": "Olhei pra tigela de ração no chão. Tava vazia. Eu tinha enchido de manhã.",
+      "fundo": "imagens/tigela_vazia.png",
+      "efeito": "zoom_lento",
+      "sons": [
+        {
+          "som": "batida",
+          "em": 1.0
+        },
+        {
+          "som": "batida",
+          "em": 2.6
+        }
+      ],
+      "brilho": 1.2
+    },
+    {
+      "narracao": "E de dentro da parede veio um barulho baixinho. Como alguém mastigando.",
+      "fundo": "imagens/parede_sala.png",
+      "efeito": "piscar",
+      "sons": [
+        {
+          "som": "chiado",
+          "em": 2.0,
+          "volume": 0.6
+        }
+      ],
+      "brilho": 1.3
+    },
+    {
+      "narracao": "Hoje eu olhei de novo, da minha janela. A casa do Seu Ernesto agora tem cinco.",
+      "fundo": "imagens/casa_cinco_janelas.png",
+      "efeito": "nenhum",
+      "final_preto": true,
+      "pausa_depois": 1.0,
+      "sons": [
+        {
+          "som": "impacto",
+          "em": 4.8
+        }
+      ],
+      "brilho": 1.7
+    }
+  ]
+}

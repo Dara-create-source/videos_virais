@@ -1,0 +1,11 @@
+{
+  "modelo": "claude-sonnet-5-5",
+  "whatsapp_numero": "",
+  "whatsapp_instancia": "dara",
+  "credencial_anthropic": null,
+  "sufixo_webhook": "<código aleatório>",
+  "voz_reserva_openai": "onyx",
+  "modelo_imagem": "gpt-image-2",
+  "qualidade_imagem": "medium",
+  "id_workflow_vozes": "Z2aX6B9rZXMwiKQ2"
+}
