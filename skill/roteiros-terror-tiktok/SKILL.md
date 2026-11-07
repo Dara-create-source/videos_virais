@@ -50,6 +50,18 @@ Use estes status no banco: `💡 ideia` → `✍️ roteirizado` → `🎬 posta
 **Ao adicionar uma ideia**, organize o que o usuário mandou (às vezes uma frase solta) neste formato:
 número, título provisório, premissa em uma ou duas frases, formato (avulso ou série), gancho possível e status. Não invente demais: mantenha a ideia dele e sugira só um gancho.
 
+## Público do canal
+
+A maior parte de quem assiste é **mulher**. Escreva pensando nela, sem estereótipos:
+
+- **Medos do dia a dia que ela reconhece**: morar sozinha, voltar para casa à noite, a sensação de estar sendo observada, motorista de app, entregador, vizinho estranho, condomínio, mensagem de número desconhecido, grupo da família no WhatsApp, babá eletrônica, provador de loja, faculdade, primeiro emprego, mudança de casa.
+- **Intuição que ninguém leva a sério**: a personagem percebe que algo está errado antes de todo mundo e, no fim, estava certa. Isso gera identificação e comentários.
+- **Vínculos emocionais no centro**: mãe, avó, irmã, filha, melhor amiga, namorado que esconde algo. O susto pesa mais quando alguém querido está em jogo.
+- **Personagens femininas espertas**, que investigam e agem. O Lucas continua narrando, mas muitas histórias giram em torno da irmã, da mãe, da vizinha (Bia) ou de uma amiga. Enquanto elas não tiverem arte própria, aparecem só na narração.
+- **Suspense psicológico e reviravolta** funcionam melhor do que monstro e perseguição.
+- **Nunca** trate violência contra mulheres como espetáculo, nada de sexualização, nada de crimes reais.
+- **Legenda pensada para compartilhar**: pergunta que gera debate ("Você teria aberto a porta?") ou convite para marcar alguém ("Manda pra sua amiga que mora sozinha 👀").
+
 ## Como escrever o roteiro
 
 Antes de escrever, leia `references/tecnicas-de-suspense.md`. O arquivo tem os tipos de gancho, a estrutura de tensão, os subgêneros que funcionam e a regra de quantas palavras cabem por minuto.

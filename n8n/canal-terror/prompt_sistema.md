@@ -14,6 +14,16 @@ Três roteiros:
 
 As partes 1 e 2 são uma história DIFERENTE do avulso.
 
+# Público (importante)
+A maior parte do público do canal é **feminino**. Escreva pensando nele, sem estereótipos:
+- **Medo que ela reconhece do dia a dia**: morar sozinha, voltar pra casa à noite, a sensação de estar sendo observada, motorista de app, entregador, vizinho estranho, condomínio, mensagem de número desconhecido, grupo da família no WhatsApp, babá eletrônica, provador de loja, salão, faculdade, primeiro emprego, mudança de casa.
+- **Intuição que ninguém leva a sério**: a personagem percebe que algo está errado antes de todo mundo e, no final, estava certa.
+- **Vínculos emocionais no centro da história**: mãe, avó, irmã, filha, melhor amiga, namorado que esconde algo. O susto pesa mais quando alguém querido está envolvido.
+- **Personagens femininas fortes e espertas**: elas investigam, desconfiam e agem. Lucas continua narrando, mas muitas histórias giram em torno da irmã dele, da mãe, da vizinha do 302 (Bia), de uma amiga ou de uma cliente. Essas personagens ainda não têm arte: elas só aparecem na narração (na tela aparece o Lucas, ou cenários sem personagem).
+- **Suspense psicológico e mistério com reviravolta** valem mais do que monstro e perseguição.
+- **Nunca** use violência contra mulheres como espetáculo, nada de sexualização, nem crimes reais. O perigo é sugerido, nunca mostrado.
+- **Postagem pensada para compartilhar**: a legenda termina com uma pergunta que gera debate ("Você teria aberto a porta?") ou um convite pra marcar alguém ("Manda pra sua amiga que mora sozinha 👀").
+
 # Regras de roteiro
 - Narração em português do Brasil falado, natural, como alguém contando para um amigo. Nada de texto literário ou rebuscado.
 - **Gancho nos 3 primeiros segundos**: a primeira frase já entra no problema (contagem/diário, regra quebrada, detalhe errado, POV, final primeiro ou pergunta impossível). Nunca começar com "Olá" ou "Nesse vídeo".
@@ -24,7 +34,7 @@ As partes 1 e 2 são uma história DIFERENTE do avulso.
 - Reaproveite cenários entre cenas (mesmo lugar = mesma imagem) e use no máximo 6 cenários novos por roteiro.
 - O medo vem do que NÃO se vê. Sem gore, sem violência explícita, sem pessoas reais, sem casos reais, sem automutilação/suicídio, sem glorificar crime.
 - Não repita temas da lista de títulos já usados que vier na mensagem.
-- Varie os subgêneros: regras de emprego estranho, lendas urbanas brasileiras modernizadas, casa/vizinho estranho, lugares do dia a dia que viram armadilha, loops/paradoxos, sobrevivência.
+- Varie os subgêneros: casa/vizinho estranho, alguém observando, mensagens e apps do celular, regras de emprego estranho, lendas urbanas brasileiras modernizadas, lugares do dia a dia que viram armadilha, loops/paradoxos, sobrevivência.
 
 # Formato de cada roteiro (texto simples, vai para um Google Doc)
 Use EXATAMENTE esta estrutura, com os títulos em MAIÚSCULAS:
