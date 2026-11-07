@@ -596,6 +596,37 @@ return [{ json: { texto: t, numero: cfg.whatsapp_numero, instancia: cfg.whatsapp
     return wf
 
 
+def wf_drive():
+    """Lista uma pasta do Drive (?pasta=ID) ou baixa um arquivo (?id=ID). Usado pelo gerador de vídeos."""
+    wf = novo_wf("Canal Terror · 8 · Drive (listar e baixar)")
+    N = wf["nodes"]
+    N.append(webhook("Pedido", "drive", metodo="GET", resposta="responseNode"))
+    N.append(node("Listar ou baixar?", "n8n-nodes-base.if", 2, {
+        "conditions": {"options": {"caseSensitive": True, "leftValue": "", "typeValidation": "loose"},
+                       "conditions": [{"id": "p", "leftValue": "={{ $json.query.pasta }}", "rightValue": "",
+                                       "operator": {"type": "string", "operation": "notEmpty", "singleValue": True}}],
+                       "combinator": "and"}, "options": {}}, [220, 100]))
+    N.append(node("Listar pasta", "n8n-nodes-base.googleDrive", 3, {
+        "resource": "fileFolder", "returnAll": True,
+        "filter": {"folderId": {"__rl": True, "value": "={{ $json.query.pasta }}", "mode": "id"}},
+        "options": {"fields": ["id", "name", "mimeType", "size"]}},
+        [440, 0], {"googleDriveOAuth2Api": CRED["googleDriveOAuth2Api"]}, alwaysOutputData=True))
+    N.append(code("Juntar lista", "return [{ json: { arquivos: $input.all().map(i => i.json).filter(f => f.id) } }];", [660, 0]))
+    N.append(node("Responder lista", "n8n-nodes-base.respondToWebhook", 1.1, {"respondWith": "json",
+              "responseBody": "={{ JSON.stringify($json) }}", "options": {}}, [880, 0]))
+    N.append(node("Baixar arquivo", "n8n-nodes-base.googleDrive", 3, {
+        "operation": "download", "fileId": {"__rl": True, "value": "={{ $json.query.id }}", "mode": "id"}, "options": {}},
+        [440, 200], {"googleDriveOAuth2Api": CRED["googleDriveOAuth2Api"]}))
+    N.append(node("Responder arquivo", "n8n-nodes-base.respondToWebhook", 1.1, {"respondWith": "binary", "options": {}},
+                  [660, 200]))
+    ligar(wf, "Pedido", "Listar ou baixar?")
+    wf["connections"]["Listar ou baixar?"] = {"main": [[{"node": "Listar pasta", "type": "main", "index": 0}],
+                                                       [{"node": "Baixar arquivo", "type": "main", "index": 0}]]}
+    ligar(wf, "Listar pasta", "Juntar lista", "Responder lista")
+    ligar(wf, "Baixar arquivo", "Responder arquivo")
+    return wf
+
+
 # --------------------------------------------------------------------------- #
 def api(metodo, caminho, corpo=None):
     cmd = ["curl", "-sS", "--max-time", "60", "-X", metodo, f"{N8N}/api/v1{caminho}", "-H", "Content-Type: application/json"]
@@ -623,7 +654,7 @@ def publicar(wf, ativar):
 
 
 if __name__ == "__main__":
-    wfs = [wf_contexto(), wf_receber(), wf_revisao(), wf_aprovacao(), wf_upload(), wf_vozes(), wf_imagens()]
+    wfs = [wf_contexto(), wf_receber(), wf_revisao(), wf_aprovacao(), wf_upload(), wf_vozes(), wf_imagens(), wf_drive()]
     for wf in wfs:
         nome = wf["name"].split("·")[-1].strip().lower().replace(" ", "_")
         (AQUI / f"wf_{nome}.json").write_text(json.dumps(wf, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -635,5 +666,5 @@ if __name__ == "__main__":
                 api("DELETE", f"/workflows/{w['id']}")
                 print("removido (versão antiga):", w["name"])
         ids = {wf["name"]: publicar(wf, "--ativar" in sys.argv) for wf in wfs}
-        ids["webhooks"] = {k: f"{N8N}/webhook/canal-terror-{k}-{SUF}" for k in ("contexto", "roteiros", "revisao", "whatsapp", "upload", "vozes", "imagens")}
+        ids["webhooks"] = {k: f"{N8N}/webhook/canal-terror-{k}-{SUF}" for k in ("contexto", "roteiros", "revisao", "whatsapp", "upload", "vozes", "imagens", "drive")}
         (AQUI / "workflows_publicados.json").write_text(json.dumps(ids, ensure_ascii=False, indent=1), encoding="utf-8")

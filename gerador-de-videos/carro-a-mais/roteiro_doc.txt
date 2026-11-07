@@ -1,0 +1,77 @@
+TÍTULO: Todo dia tem um carro a mais
+TIPO: Avulso
+
+CENAS
+CENA 1
+Narração: "Trabalho de vigia noturno num estacionamento há nove dias. E toda noite tem um carro a mais."
+Imagem: garagem_vazia + Lucas com lanterna
+Efeitos: zoom lento
+Sons: nenhum
+
+CENA 2
+Narração: "Eu conto os carros às 22h. Sempre quarenta. Às 3h17 eu conto de novo: quarenta e um."
+Imagem: garagem_vazia + Lucas com celular
+Efeitos: zoom rápido no número
+Sons: bip
+
+CENA 3
+Narração: "O carro extra é um sedã cinza, vaga 27, sempre de frente pra parede. Nunca vi ele entrar."
+Imagem: vaga_27
+Efeitos: zoom lento
+Sons: nenhum
+
+CENA 4
+Narração: "Fui na cabine ver as câmeras. Nenhuma gravou ele chegando. Ele só aparece às 3h17."
+Imagem: cabine_monitores + Lucas sentado
+Efeitos: piscar
+Sons: chiado
+
+CENA 5
+Narração: "Pensei: deve ser algum funcionário que esqueceu o carro. Racional, né? Fui até lá."
+Imagem: garagem_vazia + Lucas andando
+Efeitos: tremor leve
+Sons: toc
+
+CENA 6
+Narração: "A vaga 27 estava quente. O capô, quente. Como se tivesse acabado de chegar."
+Imagem: vaga_27 + Lucas com lanterna
+Efeitos: zoom lento
+Sons: batida
+
+CENA 7
+Narração: "[pausa] Olhei a placa. Era a minha. Mesmo número, mesma letra, até o adesivo torto."
+Imagem: placa_do_carro
+Efeitos: zoom rápido, piscar
+Sons: impacto
+
+CENA 8
+Narração: "Mas o meu carro está em casa. Eu vim de ônibus. Liguei pra minha mãe: o carro estava na garagem dela."
+Imagem: vaga_27 + Lucas com celular
+Efeitos: tremor
+Sons: telefone
+
+CENA 9
+Narração: "Voltei pra cabine correndo e rebobinei a câmera da vaga 27. Às 3h17, a luz piscou."
+Imagem: cabine_monitores
+Efeitos: piscar forte
+Sons: chiado
+
+CENA 10
+Narração: "[pausa] Na tela, eu aparecia entrando no carro. Sentado. Olhando direto pra câmera."
+Imagem: cabine_monitores
+Efeitos: zoom rápido
+Sons: impacto
+
+CENA 11
+Narração: "Só que eu estava dentro da cabine, olhando a tela. Então quem estava sentado na cabine comigo?"
+Imagem: cabine_monitores + Lucas de costas
+Efeitos: zoom lento, piscar
+Sons: batida
+
+CENA 12
+Narração: "Virei devagar. O banco atrás de mim estava vazio. Mas o relógio marcava 3h17. E o carro, quarenta e dois."
+Imagem: cabine_monitores + Lucas sorriso estranho
+Efeitos: tremor, corte seco
+Sons: sino
+
+IMAGENS NOVAS PARA GERAR

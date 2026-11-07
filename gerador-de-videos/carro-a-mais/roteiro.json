@@ -1,0 +1,179 @@
+{
+  "titulo": "Todo dia tem um carro a mais",
+  "tipo": "Avulso",
+  "config": {
+    "formato": "9:16",
+    "pasta_audio": "audio",
+    "palavras_legenda": 3,
+    "pausa": 0.9,
+    "brilho_fundo": 1.4,
+    "modelo_voz": "../vozes/pt_BR-faber-medium.onnx",
+    "chamada": "avulso",
+    "chamada_personagem": "../personagens/lucas_sorriso.png"
+  },
+  "cenas": [
+    {
+      "narracao": "Trabalho de vigia noturno num estacionamento há nove dias. E toda noite tem um carro a mais.",
+      "fundo": "imagens/garagem_vazia.png",
+      "personagem": "../personagens/lucas_lanterna.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "zoom_lento"
+    },
+    {
+      "narracao": "Eu conto os carros às 22h. Sempre quarenta. Às 3h17 eu conto de novo: quarenta e um.",
+      "fundo": "imagens/garagem_vazia.png",
+      "personagem": "../personagens/lucas_celular.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "zoom_rapido",
+      "sons": [
+        {
+          "som": "bip",
+          "em": 2.6
+        },
+        {
+          "som": "bip",
+          "em": 7.5
+        }
+      ],
+      "texto_tela": "40",
+      "texto_tela_depois": "41",
+      "troca_texto_em": 7.5,
+      "texto_tela_cor": [
+        235,
+        60,
+        60
+      ],
+      "texto_tela_tamanho": 0.16,
+      "texto_tela_altura": 0.22
+    },
+    {
+      "narracao": "O carro extra é um sedã cinza, vaga 27, sempre de frente pra parede. Nunca vi ele entrar.",
+      "fundo": "imagens/vaga_27.png",
+      "efeito": "zoom_lento"
+    },
+    {
+      "narracao": "Fui na cabine ver as câmeras. Nenhuma gravou ele chegando. Ele só aparece às 3h17.",
+      "fundo": "imagens/cabine_monitores.png",
+      "personagem": "../personagens/lucas_sentado.png",
+      "tamanho": 0.36,
+      "chao": 0.92,
+      "efeito": "piscar",
+      "sons": [
+        "chiado"
+      ]
+    },
+    {
+      "narracao": "Pensei: deve ser algum funcionário que esqueceu o carro. Racional, né? Fui até lá.",
+      "fundo": "imagens/garagem_vazia.png",
+      "personagem": "../personagens/lucas_andando.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "tremor",
+      "personagem_efeito": "tremer",
+      "sons": [
+        "toc"
+      ]
+    },
+    {
+      "narracao": "A vaga 27 estava quente. O capô, quente. Como se tivesse acabado de chegar.",
+      "fundo": "imagens/vaga_27.png",
+      "personagem": "../personagens/lucas_lanterna.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "zoom_lento",
+      "sons": [
+        "batida"
+      ]
+    },
+    {
+      "narracao": "[pausa] Olhei a placa. Era a minha. Mesmo número, mesma letra, até o adesivo torto.",
+      "fundo": "imagens/placa_do_carro.png",
+      "efeito": "zoom_rapido",
+      "sons": [
+        {
+          "som": "impacto",
+          "em": 2.0
+        }
+      ]
+    },
+    {
+      "narracao": "Mas o meu carro está em casa. Eu vim de ônibus. Liguei pra minha mãe: o carro estava na garagem dela.",
+      "fundo": "imagens/vaga_27.png",
+      "personagem": "../personagens/lucas_celular.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "tremor",
+      "personagem_efeito": "tremer",
+      "sons": [
+        "telefone"
+      ]
+    },
+    {
+      "narracao": "Voltei pra cabine correndo e rebobinei a câmera da vaga 27. Às 3h17, a luz piscou.",
+      "fundo": "imagens/cabine_monitores.png",
+      "efeito": "piscar",
+      "sons": [
+        "chiado"
+      ]
+    },
+    {
+      "narracao": "[pausa] Na tela, eu aparecia entrando no carro. Sentado. Olhando direto pra câmera.",
+      "fundo": "imagens/cabine_monitores.png",
+      "efeito": "zoom_lento",
+      "sons": [
+        {
+          "som": "chiado",
+          "em": 0.3
+        },
+        {
+          "som": "impacto",
+          "em": 2.2
+        }
+      ],
+      "filtro": "cctv",
+      "glitch": true
+    },
+    {
+      "narracao": "Só que eu estava dentro da cabine, olhando a tela. Então quem estava sentado na cabine comigo?",
+      "fundo": "imagens/cabine_monitores.png",
+      "personagem": "../personagens/lucas_costas.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "piscar",
+      "sons": [
+        "batida"
+      ]
+    },
+    {
+      "narracao": "Virei devagar. O banco atrás de mim estava vazio. Mas o relógio marcava 3h17. E o carro, quarenta e dois.",
+      "fundo": "imagens/cabine_monitores.png",
+      "personagem": "../personagens/lucas_sorriso.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "tremor",
+      "final_preto": true,
+      "personagem_efeito": "tremer",
+      "sons": [
+        {
+          "som": "sino",
+          "em": 0.5
+        },
+        {
+          "som": "impacto",
+          "em": 9.5
+        }
+      ],
+      "pausa_depois": 1.0,
+      "texto_tela": "42",
+      "texto_tela_cor": [
+        235,
+        60,
+        60
+      ],
+      "texto_tela_tamanho": 0.16,
+      "texto_tela_altura": 0.22
+    }
+  ]
+}
