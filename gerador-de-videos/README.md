@@ -81,3 +81,11 @@ Os áudios ficam em `chamadas/` e são gravados uma vez só (`serie.mp3`, `avuls
 **Videos virais** do Google Drive. Para enviar um vídeo que já existe: `python3 enviar_drive.py video.mp4`.
 O envio passa pelo workflow "Canal Terror · 5 · Iniciar upload de vídeo" do n8n (endereço em
 `../n8n/canal-terror/workflows_publicados.json`, que fica fora do git).
+
+## Legendas sincronizadas
+
+A legenda acompanha a fala de verdade: o gerador "ouve" o áudio de cada cena com o Whisper
+(`pip install faster-whisper`, roda offline) para pegar o tempo exato de cada palavra. O texto mostrado
+continua sendo o do roteiro. Os blocos têm até 3 palavras e quebram no fim das frases; em pausas longas
+a legenda some. Se o Whisper não estiver instalado, volta para a estimativa antiga. Para desligar:
+`"sincronizar_legendas": false` na config.

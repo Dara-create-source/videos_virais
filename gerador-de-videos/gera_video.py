@@ -286,6 +286,111 @@ def blocos_legenda(texto: str, max_palavras: int):
 
 
 # --------------------------------------------------------------------------- #
+# Legendas sincronizadas com a fala (tempo de cada palavra ouvido no áudio)
+# --------------------------------------------------------------------------- #
+_whisper = None
+
+
+def _modelo_whisper():
+    global _whisper
+    if _whisper is None:
+        from faster_whisper import WhisperModel  # pip install faster-whisper
+        _whisper = WhisperModel("small", device="cpu", compute_type="int8")
+    return _whisper
+
+
+def _norm(palavra: str) -> str:
+    import unicodedata
+    p = unicodedata.normalize("NFD", palavra.lower())
+    p = "".join(ch for ch in p if unicodedata.category(ch) != "Mn")
+    return re.sub(r"[^a-z0-9]", "", p)
+
+
+def _tokens_falados(palavra: str) -> list[str]:
+    """Como a palavra é dita: '3h17' -> ['tres','e','dezessete'], '47' -> ['quarenta','e','sete']."""
+    return [t for t in (_norm(x) for x in texto_para_fala(palavra).split()) if t]
+
+
+def legendas_sincronizadas(audio: np.ndarray, texto: str, por_bloco: int):
+    """Devolve [(inicio, fim, 'TEXTO DO BLOCO')] usando o tempo real de cada palavra no áudio.
+    O texto exibido é sempre o do roteiro; o áudio só fornece os tempos. Em caso de falha, devolve None."""
+    import difflib
+    palavras = texto.replace("[pausa]", " ").split()
+    if not palavras:
+        return []
+    try:
+        a16 = np.interp(np.arange(0, len(audio), SR / 16000), np.arange(len(audio)), audio).astype(np.float32)
+        segs, _ = _modelo_whisper().transcribe(a16, language="pt", word_timestamps=True, vad_filter=False,
+                                              initial_prompt=texto_para_fala(texto.replace("[pausa]", " "))[:400])
+        ouvidas = []  # (token, inicio, fim)
+        for sg in segs:
+            for w in sg.words or []:
+                toks = _tokens_falados(w.word) or [_norm(w.word)]
+                passo = (w.end - w.start) / max(1, len(toks))
+                for k, tk in enumerate(toks):
+                    ouvidas.append((tk, w.start + k * passo, w.start + (k + 1) * passo))
+    except Exception as e:  # sem o reconhecedor: volta para a estimativa antiga
+        print(f"   (legenda sem sincronia: {e})", flush=True)
+        return None
+    if not ouvidas:
+        return None
+
+    # tokens do roteiro, lembrando de qual palavra cada um veio
+    roteiro, dono = [], []
+    for i, p in enumerate(palavras):
+        for tk in (_tokens_falados(p) or [_norm(p)]):
+            roteiro.append(tk)
+            dono.append(i)
+    sm = difflib.SequenceMatcher(None, roteiro, [o[0] for o in ouvidas], autojunk=False)
+    ini = [None] * len(palavras)
+    fim = [None] * len(palavras)
+    acertos = 0
+    for bloco in sm.get_matching_blocks():
+        for k in range(bloco.size):
+            i = dono[bloco.a + k]
+            _, t0, t1 = ouvidas[bloco.b + k]
+            ini[i] = t0 if ini[i] is None else min(ini[i], t0)
+            fim[i] = t1 if fim[i] is None else max(fim[i], t1)
+            acertos += 1
+    if acertos < 0.5 * len(roteiro):
+        print("   (legenda sem sincronia: áudio muito diferente do texto)", flush=True)
+        return None
+
+    # palavras não reconhecidas: interpola entre as vizinhas
+    total = len(audio) / SR
+    conhecidos = [i for i in range(len(palavras)) if ini[i] is not None]
+    for i in range(len(palavras)):
+        if ini[i] is None:
+            antes = max((j for j in conhecidos if j < i), default=None)
+            depois = min((j for j in conhecidos if j > i), default=None)
+            t0 = fim[antes] if antes is not None else 0.0
+            t1 = ini[depois] if depois is not None else total
+            lado_a = i - (antes if antes is not None else -1)
+            lado_b = (depois if depois is not None else len(palavras)) - (antes if antes is not None else -1)
+            ini[i] = t0 + (t1 - t0) * (lado_a - 1) / lado_b
+            fim[i] = t0 + (t1 - t0) * lado_a / lado_b
+
+    # blocos de N palavras, quebrando também em pontuação forte para acompanhar as frases
+    blocos, atual = [], []
+    for i, p in enumerate(palavras):
+        atual.append(i)
+        if len(atual) >= por_bloco or re.search(r"[.!?…:][\"”»)']*$", p):
+            blocos.append(atual)
+            atual = []
+    if atual:
+        blocos.append(atual)
+    saida = []
+    for k, b in enumerate(blocos):
+        t0 = ini[b[0]]
+        t1 = fim[b[-1]] + 0.15
+        if k + 1 < len(blocos):
+            prox = ini[blocos[k + 1][0]]
+            t1 = prox if prox - fim[b[-1]] < 0.5 else min(t1 + 0.2, prox)  # pausa longa: legenda some
+        saida.append((max(0.0, t0 - 0.05), t1, " ".join(palavras[j] for j in b)))
+    return saida
+
+
+# --------------------------------------------------------------------------- #
 # Montagem
 # --------------------------------------------------------------------------- #
 def preparar_cenas(rot: dict, pasta: Path, cfg: dict, tmp: Path):
@@ -337,6 +442,10 @@ def preparar_cenas(rot: dict, pasta: Path, cfg: dict, tmp: Path):
         audio.append(silencio(depois))
         a = np.concatenate(audio)
         dur = len(a) / SR
+        if cfg.get("sincronizar_legendas", True):
+            sinc = legendas_sincronizadas(a, c.get("narracao", c.get("fala", "")), cfg["palavras_legenda"])
+            if sinc is not None:
+                legendas = sinc
         trilha.append(a)
         cenas.append({**c, "inicio": t, "dur": dur,
                       "legendas": [(t + a0, t + a1, txt) for a0, a1, txt in legendas]})
