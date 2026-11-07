@@ -6,7 +6,7 @@
     "pasta_audio": "audio",
     "palavras_legenda": 3,
     "pausa": 0.9,
-    "brilho_fundo": 1.4,
+    "brilho_fundo": 1.15,
     "modelo_voz": "../vozes/pt_BR-faber-medium.onnx",
     "chamada": "avulso",
     "chamada_personagem": "../personagens/lucas_sorriso.png"
@@ -51,7 +51,8 @@
     {
       "narracao": "O carro extra é um sedã cinza, vaga 27, sempre de frente pra parede. Nunca vi ele entrar.",
       "fundo": "imagens/vaga_27.png",
-      "efeito": "zoom_lento"
+      "efeito": "zoom_lento",
+      "altura_legenda": 0.2
     },
     {
       "narracao": "Fui na cabine ver as câmeras. Nenhuma gravou ele chegando. Ele só aparece às 3h17.",
@@ -85,7 +86,8 @@
       "efeito": "zoom_lento",
       "sons": [
         "batida"
-      ]
+      ],
+      "altura_legenda": 0.2
     },
     {
       "narracao": "[pausa] Olhei a placa. Era a minha. Mesmo número, mesma letra, até o adesivo torto.",
@@ -96,7 +98,15 @@
           "som": "impacto",
           "em": 2.0
         }
-      ]
+      ],
+      "texto_tela": "LUC3H17",
+      "texto_tela_cor": [
+        35,
+        35,
+        45
+      ],
+      "texto_tela_tamanho": 0.13,
+      "texto_tela_altura": 0.575
     },
     {
       "narracao": "Mas o meu carro está em casa. Eu vim de ônibus. Liguei pra minha mãe: o carro estava na garagem dela.",
@@ -108,7 +118,8 @@
       "personagem_efeito": "tremer",
       "sons": [
         "telefone"
-      ]
+      ],
+      "altura_legenda": 0.2
     },
     {
       "narracao": "Voltei pra cabine correndo e rebobinei a câmera da vaga 27. Às 3h17, a luz piscou.",

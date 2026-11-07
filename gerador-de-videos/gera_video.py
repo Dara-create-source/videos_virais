@@ -618,8 +618,11 @@ def quadro(c, t_global, W, H, vin, rng, cfg):
     if cfg.get("legendas", True):
         for a0, a1, txt in c["legendas"]:
             if a0 <= t_global < a1:
+                tam = int(W * cfg.get("tamanho_legenda", 0.085))
+                while tam > 12 and d.textlength(txt.upper(), font=fonte(tam)) > W * 0.88:  # frase comprida: diminui
+                    tam -= 2
                 texto_contorno(d, (W / 2, H * c.get("altura_legenda", cfg.get("altura_legenda", 0.36))), txt.upper(),
-                               int(W * cfg.get("tamanho_legenda", 0.085)), larg=max(6, int(W * 0.008)))
+                               tam, larg=max(6, int(W * 0.008)))
                 break
 
     # chamada para curtir e seguir
