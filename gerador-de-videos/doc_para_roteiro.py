@@ -58,7 +58,7 @@ def converter(texto: str, contador: str | None = None) -> dict:
         if not narr:
             continue
         c = {"narracao": narr.group(1).strip()}
-        partes = [p.strip() for p in (img.group(1) if img else "").split("+")]
+        partes = [p.strip(" )") for p in re.split(r"[+(]", img.group(1) if img else "")]
         if partes and partes[0]:
             c["fundo"] = f"imagens/{re.sub(r'[^a-z0-9_]', '', partes[0].lower())}.png"
         for p in partes[1:]:

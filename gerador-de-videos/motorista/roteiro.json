@@ -1,0 +1,168 @@
+{
+  "titulo": "O motorista sabia o apelido dela",
+  "tipo": "Avulso",
+  "config": {
+    "formato": "9:16",
+    "pasta_audio": "audio",
+    "palavras_legenda": 3,
+    "pausa": 0.9,
+    "brilho_fundo": 1.2,
+    "modelo_voz": "../vozes/pt_BR-faber-medium.onnx",
+    "chamada": "avulso",
+    "chamada_personagem": "../personagens/lucas_lanterna.png"
+  },
+  "cenas": [
+    {
+      "narracao": "A Carol entrou num Uber às 23h40 e, em dois minutos, percebeu que o motorista não era o do aplicativo.",
+      "fundo": "imagens/quarto_lucas.png",
+      "personagem": "../personagens/lucas_celular.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "zoom_lento"
+    },
+    {
+      "narracao": "Ela voltava da faculdade. Eu acompanhava a corrida pelo celular, como a gente sempre combinou desde que ela começou a voltar tarde.",
+      "fundo": "imagens/quarto_lucas.png",
+      "personagem": "../personagens/lucas_celular.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "zoom_lento",
+      "sons": [
+        "bip"
+      ],
+      "texto_tela": "23:40",
+      "texto_tela_cor": [
+        240,
+        240,
+        240
+      ],
+      "texto_tela_tamanho": 0.13,
+      "texto_tela_altura": 0.2,
+      "altura_legenda": 0.36
+    },
+    {
+      "narracao": "No aplicativo: Wellington, Corolla prata, placa terminando em 4. Foto de um cara sorrindo, de óculos.",
+      "fundo": "imagens/tela_app_corrida.png",
+      "efeito": "zoom_lento",
+      "sons": [
+        "bip"
+      ],
+      "brilho": 1.0
+    },
+    {
+      "narracao": "A Carol me mandou mensagem: \"Entrei. Tá tudo certo.\" Eu respirei aliviado.",
+      "fundo": "imagens/quarto_lucas.png",
+      "personagem": "../personagens/lucas_celular.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "nenhum",
+      "sons": [
+        "telefone"
+      ]
+    },
+    {
+      "narracao": "Dois minutos depois, outra mensagem. Só uma palavra: \"abacaxi\".",
+      "fundo": "imagens/tela_chat_carol.png",
+      "efeito": "zoom_rapido",
+      "sons": [
+        {
+          "som": "bip",
+          "em": 1.4
+        },
+        {
+          "som": "impacto",
+          "em": 3.0
+        }
+      ],
+      "brilho": 1.0,
+      "texto_tela": "abacaxi",
+      "texto_tela_cor": [
+        255,
+        214,
+        64
+      ],
+      "texto_tela_tamanho": 0.12,
+      "texto_tela_altura": 0.47,
+      "texto_piscando": false,
+      "altura_legenda": 0.2
+    },
+    {
+      "narracao": "[pausa] Abacaxi era o nosso código. Quer dizer: algo está errado, não pergunte, só me ajude.",
+      "fundo": "imagens/quarto_lucas.png",
+      "personagem": "../personagens/lucas_lanterna.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "tremor",
+      "personagem_efeito": "tremer",
+      "sons": [
+        "batida"
+      ]
+    },
+    {
+      "narracao": "Liguei na hora. Ela atendeu fingindo normalidade: \"Oi, mãe! Tô chegando!\" Eu não sou a mãe dela.",
+      "fundo": "imagens/quarto_lucas.png",
+      "personagem": "../personagens/lucas_celular.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "zoom_lento",
+      "sons": [
+        "telefone"
+      ]
+    },
+    {
+      "narracao": "Sussurrei: \"O que tem de errado?\" Ela respondeu baixinho: \"Ele disse Boa noite, Carol. No app, meu nome é Carolina.\"",
+      "fundo": "imagens/interior_carro_noite.png",
+      "efeito": "piscar",
+      "sons": [
+        "chiado"
+      ]
+    },
+    {
+      "narracao": "Só a nossa família chama ela de Carol. Mandei ela pedir pra parar na farmácia 24 horas. O carro passou direto.",
+      "fundo": "imagens/rua_noite_semaforo.png",
+      "efeito": "tremor",
+      "sons": [
+        "buzina"
+      ]
+    },
+    {
+      "narracao": "[pausa] Ela falou: \"Vou vomitar, para agora!\" No sinal vermelho, ele travou as portas. Mas ela já tinha destravado a dela. Saiu correndo pra dentro de um bar lotado.",
+      "fundo": "imagens/rua_noite_semaforo.png",
+      "efeito": "zoom_rapido",
+      "sons": [
+        {
+          "som": "buzina",
+          "em": 3.0
+        },
+        {
+          "som": "impacto",
+          "em": 5.5
+        }
+      ]
+    },
+    {
+      "narracao": "Doze minutos depois, o Wellington verdadeiro chegou no ponto, confuso. A placa era a mesma. O carro dele nunca saiu de lá.",
+      "fundo": "imagens/rua_noite_semaforo.png",
+      "efeito": "zoom_lento",
+      "sons": [
+        "buzina"
+      ]
+    },
+    {
+      "narracao": "A conta que aceitou a corrida foi apagada naquela noite. E o que não sai da minha cabeça: como aquele homem sabia que ela se chamava Carol?",
+      "fundo": "imagens/tela_app_corrida.png",
+      "efeito": "zoom_lento",
+      "final_preto": true,
+      "pausa_depois": 1.0,
+      "brilho": 1.0,
+      "texto_tela": "Carol?",
+      "texto_tela_cor": [
+        235,
+        60,
+        60
+      ],
+      "texto_tela_tamanho": 0.14,
+      "texto_tela_altura": 0.62
+    }
+  ]
+}

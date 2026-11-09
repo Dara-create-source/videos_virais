@@ -1,0 +1,77 @@
+TÍTULO: O motorista sabia o apelido dela
+TIPO: Avulso
+
+CENAS
+CENA 1
+Narração: "A Carol entrou num Uber às 23h40 e, em dois minutos, percebeu que o motorista não era o do aplicativo."
+Imagem: quarto_lucas (Lucas com o celular)
+Efeitos: zoom lento
+Sons: nenhum
+
+CENA 2
+Narração: "Ela voltava da faculdade. Eu acompanhava a corrida pelo celular, como a gente sempre combinou desde que ela começou a voltar tarde."
+Imagem: quarto_lucas (Lucas com o celular)
+Efeitos: texto na tela: 23h40
+Sons: bip
+
+CENA 3
+Narração: "No aplicativo: Wellington, Corolla prata, placa terminando em 4. Foto de um cara sorrindo, de óculos."
+Imagem: tela_app_corrida
+Efeitos: zoom lento na foto
+Sons: bip
+
+CENA 4
+Narração: "A Carol me mandou mensagem: "Entrei. Tá tudo certo." Eu respirei aliviado."
+Imagem: quarto_lucas (Lucas com o celular)
+Efeitos: nenhum
+Sons: telefone
+
+CENA 5
+Narração: "Dois minutos depois, outra mensagem. Só uma palavra: "abacaxi"."
+Imagem: tela_chat_carol
+Efeitos: zoom rápido, piscar
+Sons: impacto
+
+CENA 6
+Narração: "[pausa] Abacaxi era o nosso código. Quer dizer: algo está errado, não pergunte, só me ajude."
+Imagem: quarto_lucas (Lucas com medo)
+Efeitos: tremor
+Sons: batida
+
+CENA 7
+Narração: "Liguei na hora. Ela atendeu fingindo normalidade: "Oi, mãe! Tô chegando!" Eu não sou a mãe dela."
+Imagem: quarto_lucas (Lucas com o celular)
+Efeitos: zoom lento
+Sons: telefone
+
+CENA 8
+Narração: "Sussurrei: "O que tem de errado?" Ela respondeu baixinho: "Ele disse Boa noite, Carol. No app, meu nome é Carolina.""
+Imagem: interior_carro_noite
+Efeitos: zoom lento, luz piscando
+Sons: chiado
+
+CENA 9
+Narração: "Só a nossa família chama ela de Carol. Mandei ela pedir pra parar na farmácia 24 horas. O carro passou direto."
+Imagem: rua_noite_semaforo
+Efeitos: tremor
+Sons: buzina
+
+CENA 10
+Narração: "[pausa] Ela falou: "Vou vomitar, para agora!" No sinal vermelho, ele travou as portas. Mas ela já tinha destravado a dela. Saiu correndo pra dentro de um bar lotado."
+Imagem: rua_noite_semaforo
+Efeitos: zoom rápido, piscar
+Sons: impacto
+
+CENA 11
+Narração: "Doze minutos depois, o Wellington verdadeiro chegou no ponto, confuso. A placa era a mesma. O carro dele nunca saiu de lá."
+Imagem: rua_noite_semaforo
+Efeitos: zoom lento
+Sons: buzina
+
+CENA 12
+Narração: "A conta que aceitou a corrida foi apagada naquela noite. E o que não sai da minha cabeça: como aquele homem sabia que ela se chamava Carol?"
+Imagem: tela_app_corrida (corrida cancelada)
+Efeitos: zoom lento, texto na tela: Carol?
+Sons: nenhum
+
+IMAGENS NOVAS PARA GERAR
