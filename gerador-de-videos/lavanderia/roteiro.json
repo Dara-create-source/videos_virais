@@ -1,0 +1,168 @@
+{
+  "titulo": "A máquina 7 da lavanderia",
+  "tipo": "Avulso",
+  "config": {
+    "formato": "9:16",
+    "pasta_audio": "audio",
+    "palavras_legenda": 3,
+    "pausa": 0.9,
+    "brilho_fundo": 1.25,
+    "modelo_voz": "../vozes/pt_BR-faber-medium.onnx",
+    "chamada": "avulso",
+    "chamada_personagem": "../personagens/lucas_sorriso.png"
+  },
+  "cenas": [
+    {
+      "narracao": "Toda madrugada, a máquina 7 da lavanderia 24h está cheia de roupa. E ninguém nunca vem buscar.",
+      "fundo": "imagens/lavanderia_fachada.png",
+      "efeito": "zoom_lento",
+      "brilho": 1.0
+    },
+    {
+      "narracao": "Eu moro em cima dessa lavanderia. Às 3h17 desci pra lavar meu uniforme, e lá estava ela de novo: a máquina 7, girando sozinha.",
+      "fundo": "imagens/lavanderia_interior.png",
+      "personagem": "../personagens/lucas_andando.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "zoom_lento",
+      "sons": [
+        "chiado"
+      ]
+    },
+    {
+      "narracao": "Fui reclamar com o dono, mas o balcão estava vazio. Só um aviso colado: \"Não retire roupas da máquina 7\".",
+      "fundo": "imagens/balcao_aviso.png",
+      "efeito": "zoom_rapido",
+      "sons": [
+        "toc"
+      ],
+      "texto_tela": "NÃO RETIRE ROUPAS DA MÁQUINA 7",
+      "texto_tela_tamanho": 0.065,
+      "texto_tela_altura": 0.2,
+      "texto_tela_cor": [
+        255,
+        214,
+        64
+      ]
+    },
+    {
+      "narracao": "Eu sou curioso demais. Pensei: deve ser roupa esquecida. Vou só olhar de quem é.",
+      "fundo": "imagens/lavanderia_interior.png",
+      "personagem": "../personagens/lucas_celular.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "tremor",
+      "personagem_efeito": "tremer"
+    },
+    {
+      "narracao": "[pausa] A máquina parou. A porta destravou sozinha. Dentro, uma camisa cinza de trabalho. Com crachá.",
+      "fundo": "imagens/maquina_7_aberta.png",
+      "efeito": "zoom_rapido",
+      "sons": [
+        "impacto"
+      ]
+    },
+    {
+      "narracao": "Era igualzinha à minha. Mesmo crachá, mesma foto. Só que a minha estava na minha mão, ainda molhada.",
+      "fundo": "imagens/maquina_7_aberta.png",
+      "personagem": "../personagens/lucas_lanterna.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "zoom_lento",
+      "sons": [
+        "batida"
+      ]
+    },
+    {
+      "narracao": "Peguei a camisa. Tinha um bilhete no bolso, com a minha letra: \"Não devolva a roupa pra máquina\".",
+      "fundo": "imagens/bilhete_bolso.png",
+      "efeito": "nenhum",
+      "sons": [
+        "bip"
+      ],
+      "texto_tela": "Não devolva a roupa pra máquina",
+      "texto_tela_tamanho": 0.06,
+      "texto_tela_altura": 0.22,
+      "texto_tela_cor": [
+        240,
+        230,
+        200
+      ]
+    },
+    {
+      "narracao": "Eu não lembrava de ter escrito aquilo. Tentei rir, falei que era pegadinha. Mas o celular marcou 3h27.",
+      "fundo": "imagens/lavanderia_interior.png",
+      "personagem": "../personagens/lucas_celular.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "tremor",
+      "personagem_efeito": "tremer",
+      "sons": [
+        "telefone"
+      ],
+      "texto_tela": "3:27",
+      "texto_tela_cor": [
+        235,
+        60,
+        60
+      ],
+      "texto_tela_tamanho": 0.14,
+      "texto_tela_altura": 0.2
+    },
+    {
+      "narracao": "Dez minutos inteiros tinham sumido. E a máquina 8, a do lado, começou a girar.",
+      "fundo": "imagens/lavanderia_interior.png",
+      "efeito": "piscar",
+      "sons": [
+        "chiado"
+      ]
+    },
+    {
+      "narracao": "[pausa] Pela janelinha, vi um boné vermelho dando voltas. Alguém lá dentro batia no vidro, de dentro pra fora.",
+      "fundo": "imagens/maquina_8_janelinha.png",
+      "efeito": "zoom_rapido",
+      "sons": [
+        {
+          "som": "toc",
+          "em": 3.6
+        },
+        {
+          "som": "toc",
+          "em": 4.2
+        },
+        {
+          "som": "toc",
+          "em": 4.8
+        }
+      ]
+    },
+    {
+      "narracao": "Corri pra escada, subi, tranquei a porta. Joguei a camisa no chão e fui dormir sem lavar nada.",
+      "fundo": "imagens/escada_predio.png",
+      "personagem": "../personagens/lucas_andando.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "tremor",
+      "personagem_efeito": "tremer",
+      "sons": [
+        "batida"
+      ]
+    },
+    {
+      "narracao": "De manhã, a camisa não estava mais no chão. Estava dobrada na minha cama. E a minha, a que eu usava, estava girando na máquina 7.",
+      "fundo": "imagens/quarto_lucas_camisa.png",
+      "personagem": "../personagens/lucas_sorriso.png",
+      "tamanho": 0.42,
+      "chao": 0.9,
+      "efeito": "piscar",
+      "sons": [
+        {
+          "som": "impacto",
+          "em": 5.0
+        }
+      ],
+      "final_preto": true,
+      "pausa_depois": 1.0
+    }
+  ]
+}

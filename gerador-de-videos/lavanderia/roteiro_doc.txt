@@ -1,0 +1,77 @@
+TÍTULO: A máquina 7 da lavanderia
+TIPO: Avulso
+
+CENAS
+CENA 1
+Narração: "Toda madrugada, a máquina 7 da lavanderia 24h está cheia de roupa. E ninguém nunca vem buscar."
+Imagem: lavanderia_fachada
+Efeitos: zoom lento
+Sons: nenhum
+
+CENA 2
+Narração: "Eu moro em cima dessa lavanderia. Às 3h17 desci pra lavar meu uniforme, e lá estava ela de novo: a máquina 7, girando sozinha."
+Imagem: lavanderia_interior (+ Lucas andando de lado)
+Efeitos: zoom lento
+Sons: chiado
+
+CENA 3
+Narração: "Fui reclamar com o dono, mas o balcão estava vazio. Só um aviso colado: "Não retire roupas da máquina 7"."
+Imagem: balcao_aviso
+Efeitos: zoom rápido no aviso
+Sons: toc
+
+CENA 4
+Narração: "Eu sou curioso demais. Pensei: deve ser roupa esquecida. Vou só olhar de quem é."
+Imagem: lavanderia_interior (+ Lucas com o celular)
+Efeitos: tremor leve
+Sons: nenhum
+
+CENA 5
+Narração: "[pausa] A máquina parou. A porta destravou sozinha. Dentro, uma camisa cinza de trabalho. Com crachá."
+Imagem: maquina_7_aberta
+Efeitos: piscar luz, zoom rápido
+Sons: impacto
+
+CENA 6
+Narração: "Era igualzinha à minha. Mesmo crachá, mesma foto. Só que a minha estava na minha mão, ainda molhada."
+Imagem: maquina_7_aberta (+ Lucas com medo segurando lanterna)
+Efeitos: zoom lento
+Sons: batida
+
+CENA 7
+Narração: "Peguei a camisa. Tinha um bilhete no bolso, com a minha letra: "Não devolva a roupa pra máquina"."
+Imagem: bilhete_bolso
+Efeitos: texto na tela
+Sons: bip
+
+CENA 8
+Narração: "Eu não lembrava de ter escrito aquilo. Tentei rir, falei que era pegadinha. Mas o celular marcou 3h27."
+Imagem: lavanderia_interior (+ Lucas com o celular)
+Efeitos: tremor
+Sons: telefone
+
+CENA 9
+Narração: "Dez minutos inteiros tinham sumido. E a máquina 8, a do lado, começou a girar."
+Imagem: lavanderia_interior
+Efeitos: piscar luz
+Sons: chiado
+
+CENA 10
+Narração: "[pausa] Pela janelinha, vi um boné vermelho dando voltas. Alguém lá dentro batia no vidro, de dentro pra fora."
+Imagem: maquina_8_janelinha
+Efeitos: zoom rápido
+Sons: toc
+
+CENA 11
+Narração: "Corri pra escada, subi, tranquei a porta. Joguei a camisa no chão e fui dormir sem lavar nada."
+Imagem: escada_predio (+ Lucas andando de lado)
+Efeitos: tremor
+Sons: batida
+
+CENA 12
+Narração: "De manhã, a camisa não estava mais no chão. Estava dobrada na minha cama. E a minha, a que eu usava, estava girando na máquina 7."
+Imagem: quarto_lucas_camisa (+ Lucas sorriso estranho)
+Efeitos: zoom lento, piscar
+Sons: impacto
+
+IMAGENS NOVAS PARA GERAR
