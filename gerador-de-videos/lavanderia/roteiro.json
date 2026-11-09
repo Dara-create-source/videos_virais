@@ -152,8 +152,8 @@
       "narracao": "De manhã, a camisa não estava mais no chão. Estava dobrada na minha cama. E a minha, a que eu usava, estava girando na máquina 7.",
       "fundo": "imagens/quarto_lucas_camisa.png",
       "personagem": "../personagens/lucas_sorriso.png",
-      "tamanho": 0.42,
-      "chao": 0.9,
+      "tamanho": 0.4,
+      "chao": 0.92,
       "efeito": "piscar",
       "sons": [
         {
@@ -162,7 +162,8 @@
         }
       ],
       "final_preto": true,
-      "pausa_depois": 1.0
+      "pausa_depois": 1.0,
+      "posicao": "direita"
     }
   ]
 }
